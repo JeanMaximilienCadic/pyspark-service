@@ -1,0 +1,10 @@
+[Unit]
+Description=spark-3.4.0
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/spark
+
+[Install]
+WantedBy=multi-user.target
